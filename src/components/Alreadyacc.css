@@ -1,0 +1,64 @@
+
+.ac_mainuserSignup{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.ac_maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #0E063D ;
+    border-radius: 25px;
+    width: 600px;
+    margin: 0px 100px 100px 100px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+}
+.ac_maindiv p{
+    margin-top: 20px;
+    font-weight:600 ;
+    color: #0E063D;
+}
+#ac_useraccount{
+    color: #00D1FF;
+}
+
+#ac_UserSignUpB2{
+    margin-top :20px;
+    margin-bottom: 50px;
+    padding: 13px 60px;
+    background: transparent;
+    border: 1.5px solid #00D1FF;
+    color:#00D1FF;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+#ac_UserSignUpB2:hover{
+    background-color:#00D1FF;
+    color: white;
+}
+
+
+.ac_actualform h5{
+    color: #0E063D;
+
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#pass{
+    margin-top: 20px;
+}
+.ac_actualform .ac_forminput{
+    color: #0E063D;
+
+    margin: 0px;
+    padding: 10px;
+    width: 370px;
+    border: 1px solid #B2B2B2;
+    border-radius: 8px;
+}
+

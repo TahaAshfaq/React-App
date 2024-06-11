@@ -1,0 +1,42 @@
+ .mainHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+.head{
+   display: flex;
+   flex-direction: rows;
+   justify-content: space-between;
+}
+.headabove{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color:#0E063D;
+   font-size: 15px;
+   font-weight: 500;
+   color: white;
+   padding: 10px;
+
+}
+ .mainHeader img{
+    margin-left: 40px;
+ }
+
+ .intButton{
+    margin: 15px 30px;
+    padding: 10px 40px;
+    background: #FF005C;
+    border: none;
+    border-radius: 0px;
+    color: white;
+    font-size: 16px;
+    transition: .3s ease all;
+  }
+
+ .intButton:hover{
+         margin: 15px 15px;
+        background: transparent;
+        font-size: 20px;
+        color: #FF005C;
+  }

@@ -1,0 +1,34 @@
+.outerdivY{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 200px;
+}
+.div2Yscreen{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+}
+.div2Yscreen p{
+    font-size: 16px;
+    font-weight: 500;
+    color:#0E063D ;
+}
+#innerdivY{
+    /* background-color: #0E063D; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.outerdivY h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    color:#0E063D ;
+}
+.outerdivY p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+
+}

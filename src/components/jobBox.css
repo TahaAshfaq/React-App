@@ -1,0 +1,113 @@
+
+.jobBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-between;  
+    border: 1.5px solid #B2B2B2;
+    margin:10px 100px ;
+    padding:20px;
+    border-radius: 8px;
+}
+
+.compjob{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    color: #0E063D;
+}
+.JobDes{
+    width: 340px;
+    height: 125px;
+    border: 1.5px solid #B2B2B2;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 7px;
+}
+.JobDes p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #0E063D;
+
+}
+.JobDes h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0E063D;
+
+}
+.companyname{
+    display: flex;
+    flex-direction: row;
+    
+}
+.companyname h4{
+    font-size: 12px;
+    font-weight: 400;
+    align-self: flex-end;
+    margin-right: 5px;
+    color: #0E063D;
+
+}
+.companyname p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0E063D;
+
+}
+.jobName{
+    display: flex;
+    flex-direction: row;
+}
+.jobName h4{
+    font-size: 12px;
+    font-weight: 400;
+    align-self: flex-end;
+    margin-right: 5px;
+    color: #0E063D;
+
+}
+.jobName p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0E063D;
+
+}
+button{
+    padding: 13px 60px;
+    background: transparent;
+    border: 1.5px solid #00D1FF;
+    color:#00D1FF;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+button:hover{
+    background-color:#00D1FF;
+    color: white;
+}
+.jobPrice{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.jobPrice p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E063D;
+
+}
+.jobTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jobTime p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E063D;
+
+}
+.jobPrice img{
+    margin-right: 10px;
+}
