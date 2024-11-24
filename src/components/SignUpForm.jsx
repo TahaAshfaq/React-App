@@ -41,10 +41,10 @@ export function SignUpForm() {
       if (response.ok) {
         const data = await response.json();
         console.log("User saved:", data);
-        navigate("/Yscreen");
+        navigate("/Yscreen", { state: { email: formData.email, userName: formData.userName } });
       } else {
         setErr(true);
-        alert("email exist already.");
+        alert("Email already exists.");
         console.error("Error saving user:", response.statusText);
       }
     } catch (error) {
@@ -64,7 +64,7 @@ export function SignUpForm() {
         </div>
       </div>
       <div className="signupformright">
-        {err && <p>Email already exist try another one.</p>}
+        {err && <p>Email already exists. Try another one.</p>}
         <form className="actualform" onSubmit={submission}>
           <h3>Enter Details</h3>
           <h5>UserName</h5>
@@ -106,7 +106,7 @@ export function SignUpForm() {
             onChange={handleChange}
             required
           />
-
+          <p>{formData.email}</p>
           <p>
             By proceeding, you confirm that you have read and agree to <br />
             Privacy Notice.

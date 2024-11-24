@@ -36,7 +36,7 @@ export function Body() {
       { opacity: 1, y: 0, duration: 1, delay: 0.5, ease: "power3.out" }
     );
   }, []);
- 
+
   return (
     <body>
       {/* <div>

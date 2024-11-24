@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./yscreen.css";
 import JobBox from "./JobBox";
-import user from "../assets/user.svg";
+import userIcon from "../assets/user.svg";
 
 export function Yscreen() {
   const [jobs, setJobs] = useState([]);
+  const location = useLocation();
+  const { email, userName } = location.state || {};
 
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        // Fetch jobs data from the backend when the component mounts
         const response = await fetch("http://localhost:2000/jobs");
-        // console.log(response.data);
         if (!response.ok) {
           throw new Error("Failed to fetch jobs");
         }
         const data = await response.json();
-        // Set the fetched jobs data in the state
-        // console.log(data);
         setJobs(data);
       } catch (error) {
         console.error(error);
@@ -30,19 +29,18 @@ export function Yscreen() {
   return (
     <>
       <div className="outerdivY">
-        <img src={user} alt="" />
+        <img src={userIcon} alt="" />
         <div id="innerdivY">
-          <h5>Username</h5>
-          <p>Email</p>
+          <h5>{userName}</h5>
+          <p>{email}</p>
         </div>
       </div>
       <div className="div2Yscreen">
         <p>JOBS AVAILABLE FOR YOU</p>
       </div>
-      {/* Map over the fetched jobs array and render JobBox for each job */}
       {jobs.map((job) => (
         <JobBox
-          key={job._id} // Use the job's MongoDB _id as the key
+          key={job._id}
           company={job.companyname}
           name={job.jobName}
           desc={job.jobDes}
